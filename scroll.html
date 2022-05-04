@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll CSS</title>
+    <style>
+     html{
+        scroll-behavior: smooth; 
+     }
+     a{
+         display: inline-block;
+         width: auto;
+         text-decoration: none;
+         font-size: 1.3em;
+     }
+     nav, scroll-container {
+         display: block;
+         margin: 0 auto;
+         text-align: center;
+     }
+     nav {
+         width: 600px;
+         padding: 5px;
+         border: 1px solid black;
+     }
+     scroll-container{
+         width: 800px;
+         height: auto;
+         position: relative;
+     }
+     scroll-page {
+         border: 3px solid green;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         font-size: 2em;
+         margin: 15px;
+     }
+
+     #topo{
+         position: absolute;
+         bottom: 15px;
+         right: 25px;
+     }
+    </style>
+</head>
+<body>
+  <nav>
+      <a href="#page-1">Sessão 01</a>
+      <a href="#page-2">Sessão 02</a>
+      <a href="#page-3">Sessão 03</a>
+  </nav>
+  <scroll-container>
+      <scroll-page id="page-1">
+        <h2>Conteúdo 01</h2>  <hr>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolores accusantium suscipit voluptate a provident inventore, id tempore similique, fuga officiis! Enim nihil exercitationem eos consequuntur nesciunt provident nisi esse?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos eaque nulla sit perspiciatis, vel eos laudantium harum non. Modi numquam obcaecati amet sequi ipsum quam reiciendis est ducimus repudiandae explicabo.
+      </scroll-page>
+      <scroll-page id="page-2">
+        <h2>Conteúdo 02</h2>  <hr>
+        "A teoria da relatividade foi uma revolução para o século XX, pois ela provocou inúmeras transformações em conceitos básicos e também proporcionou que fatos importantes, ainda não explicáveis, pudessem ser entendidos. Essa teoria surgiu com o físico alemão Albert Einstein. Nascido em Ulm, Einstein foi um físico e pesquisador muito conhecido por ter proposto a teoria da relatividade, mas também foi ele que explicou corretamente o efeito fotoelétrico, fato esse que possibilitou o desenvolvimento da bomba atômica, mesmo sem ele saber para quais fins se destinava.
+A teoria da relatividade é composta de duas outras teorias: Teoria da Relatividade Restrita, que estuda os fenômenos em relação a referenciais inerciais, e a Teoria da Relatividade Geral, que aborda fenômenos do ponto de vista não inercial. Apesar de formar uma só teoria, elas foram propostas em tempos diferentes, mas ambas trouxeram o conhecimento de que os movimentos do Universo não são absolutos, mas, sim, relativos."
+        <a href="#page-1">Sessão 01</a>
+      </scroll-page>
+      <scroll-page id="page-3">
+        <h2>Conteúdo 03</h2>  <hr>
+        Xadrez é um esporte, também considerado uma arte e uma ciência. Pode ser classificado como um jogo de tabuleiro de natureza recreativa ou competitiva para dois jogadores, sendo também conhecido como Xadrez Ocidental ou Xadrez Internacional para distingui-lo dos seus antecessores e de outras variantes atuais. A forma atual do jogo surgiu no sudoeste da Europa na segunda metade do século XV, durante o Renascimento, depois de ter se desenvolvido a partir de suas antigas origens persas e indianas. O Xadrez pertence à mesma família do Xiangqi e do Shogi e, atualmente segundo historiadores do enxadrismobr. (ou xadrezismo pt.), todos eles se originaram do Chaturanga, que se praticava na Índia no século VI. Existem muitos tipos de xadrez: xadrez ocidental, xadrez turco, xadrez chinês (Xiangqi) xadrez árabe (Xatranje), xadrez coreano (Janggi), xadrez japonês (Shogi), xadrez indiano (Chaturaji), xadrez tailandês (Makruk), xadrez indonésio e até o xadrez etíope (Senterej). Há muitas semelhanças entre tais jogos, com todos possivelmente compartilhando uma origem comum.
+        <a href="#page-2">Sessão 02</a>
+      </scroll-page>
+      <a id="topo" href="#top">Home</a>
+  </scroll-container>  
+</body>
+</html>
